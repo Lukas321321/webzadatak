@@ -27,7 +27,8 @@ CREATE TABLE `users` (
   `city` varchar(255) COLLATE utf8_croatian_ci DEFAULT NULL,
   `street` varchar(255) COLLATE utf8_croatian_ci DEFAULT NULL,
   `birthdate` date DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `email` (`email`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_croatian_ci;
 
 /*Data for the table `users` */
