@@ -28,12 +28,13 @@ CREATE TABLE `users` (
   `street` varchar(255) COLLATE utf8_croatian_ci DEFAULT NULL,
   `birthdate` date DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_croatian_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_croatian_ci;
 
 /*Data for the table `users` */
 
 insert  into `users`(`id`,`name`,`surname`,`email`,`username`,`password`,`country`,`city`,`street`,`birthdate`) values 
-(1,NULL,NULL,NULL,NULL,'$2y$10$cjKyhD0TZU0KpeFO9n99iOrZpBuJDHOhlAarZBXAM7WcqJSc98dSa','HR',NULL,NULL,NULL);
+(5,'testko','testni','test@test.com',NULL,'$2y$10$EtcrqwQenntEgfim1iFTW.SedDITHhNcPIuyP5Ef5iGKNPQBss5Gm','BD','gradograd','uliÄna','0000-00-00'),
+(6,'pero','testni','smrk@mrk.com',NULL,'$2y$10$NbYfGLFx0H7Am9SEx54M/ukGLp2tpBgBwwm76lVVBbSR40RN859yW','IT','gradograd','ulica','0000-00-00');
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
