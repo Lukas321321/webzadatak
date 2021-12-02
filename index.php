@@ -25,11 +25,13 @@
 			<a href="index.php?izbor=2">Kontakt </a>
 			<a href="index.php?izbor=3">O&nbspnama </a>
 			<a href="index.php?izbor=4">Galerija </a>
+			<a href="index.php?izbor=9">Lebowski </a>
 			
 			<?php
-			if (isset($_SESSION["login"]) and $_SESSION["login"] == 1)
+			if (isset($_SESSION["login"]) and $_SESSION["login"] > 0)
 			{
-				echo("<a href=\"index.php?izbor=7\">Odjava </a>");
+				echo("<a href=\"index.php?izbor=7\">CMS </a>");
+				echo("<a href=\"index.php?izbor=10\">Odjava </a>");
 			}
 			else
 				echo("<a href=\"index.php?izbor=5\">Prijava </a><a href=\"index.php?izbor=6\">Registracija </a>");
@@ -63,6 +65,15 @@
 					include("registracija.php");
 					break;
 				case 7:
+					include("cms.php");
+					break;
+				case 8:
+					include("clanak.php");
+					break;
+				case 9:
+					include("nekifilm.php");
+					break;
+				case 10:
 					{
 					
 					session_unset();
